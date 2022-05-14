@@ -5,7 +5,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/fargate/service/javalin-app",
+          "awslogs-group": "/fecs/first-run-task-definition",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "fargate"
         }
