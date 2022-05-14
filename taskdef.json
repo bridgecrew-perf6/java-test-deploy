@@ -6,7 +6,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "/fargate/service/javalin-app",
-          "awslogs-region": "eu-west-1",
+          "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "fargate"
         }
       },
@@ -17,12 +17,12 @@
           "containerPort": 7000
         }
       ],
-      "image": "601912882130.dkr.ecr.eu-west-1.amazonaws.com/javalin-app:425ad54",
+      "image": "httpd:2.4",
       "name": "javalin-app"
     }
   ],
   "memory": "512",
-  "family": "javalin-app-td",
+  "family": "first-run-task-definition",
   "requiresCompatibilities": ["FARGATE"],
   "networkMode": "awsvpc",
   "cpu": "256"
